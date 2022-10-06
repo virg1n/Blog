@@ -1,0 +1,6 @@
+.NavBbar{
+    text-decoration: none;
+}
+.NavBbar:hover{
+    font-size: 120%;
+}

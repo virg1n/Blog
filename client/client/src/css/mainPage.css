@@ -1,0 +1,62 @@
+#header-navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 11;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86); 
+}
+.modal-title p{
+    font-size: 28px;
+}
+
+.nav-item{
+    font-size: 48px;
+}
+.navbar-brand {
+    font-size: 50px;
+    color: #000; }
+.navbar-nav .nav-link {
+    color: #000;
+    font-size: 22px;
+    transition: .3s ease; }
+    
+.navbar-nav:hover li a {
+    opacity: 0.5; }
+.navbar-nav:hover li a:hover {
+    opacity: 1; }
+
+.navbar-toggler {
+font-size: 2rem;
+color: #000; }
+
+.bord{
+    border: 4px solid #FDD85D;
+    border-radius: 10%;
+}
+.mian-container img{
+    margin-left: 10%;
+    width: 80%;
+}
+.mian-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mian-container h2{
+    max-width: 110%;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .mian-container img {
+        width: 100%;
+    }
+    .grid-item {
+        width: 100%; 
+    }
+    .progress {
+    height: 30px;
+    font-size: 16px; } 
+}

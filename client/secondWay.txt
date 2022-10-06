@@ -1,0 +1,84 @@
+import { Button } from 'react-bootstrap'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './Login.css'
+
+export const LoginPage = () => {
+  return (
+    <div className="mainLogin" >
+      <div className='contentLogin'>
+        <form action="#" className='form-input'>
+          <h1 style={{display:'flex',justifyContent:"center",alignItems:"center"}}>Sign in</h1>
+          <div className='form-input'>
+            <input type="email" placeholder='Email'/>
+          </div>
+          <div className='form-input'>
+            <input type="password" placeholder='Password' />
+          </div>
+          <div className='form-submit'>
+            <button> Sign in </button>
+          </div>
+          <Link to="/register">Log in if you have an account</Link>
+        </form>
+      </div>
+    </div>
+  )
+}
+
+
+
+
+//css
+
+
+
+.mainLogin{
+    /* position:absolute; */
+    /* left:30%; */
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 16px;
+    max-width: 550px;
+}
+
+.contentLogin{
+    background: #FFF;
+    padding: 25px;
+    border-radius: 16px;
+    margin: 0px 15px;
+}
+
+.form-input{
+    text-align: center;
+    justify-content: center;
+    /* padding-right: 25px; */
+}
+
+.form-input input{
+    /* margin-left:55px; */
+    /* margin-right: 75px; */
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border: solid rgba(0,0,0,0.7);
+    border-radius: 16px;
+}
+
+.form-submit{
+    width: 100%;
+    border: solid #FE4066;
+    background-color: #FE4066;
+    border-radius: 16px;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
